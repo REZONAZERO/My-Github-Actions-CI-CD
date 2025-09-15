@@ -1,0 +1,32 @@
+name: Github-Actions
+env:
+  APPLICATION_NAME: "Example"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print Hello Message in Testing
+        run : echo "Hello Message from Testing job"
+
+      - name: Exec few Commands
+        run : |
+          echo "Hello Message 1"
+          echo "Hello Message 2"
+          echo "Application name: ${{ APPLICATION_NAME }}
+  
+  my_deploy:
+    runs-on: ubuntu-latest
+    needs  : [my_testing]
+
+    steps:
+      - name: Print Hello Message in Deploy
+        run : echo "Hello Message from Deploy"
+
+      
