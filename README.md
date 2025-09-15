@@ -6,6 +6,8 @@ Let's configure Github Actions. This is so important for CI/CD and pipelines.
 
 Actions file code:
 <img width="626" height="689" alt="image" src="https://github.com/user-attachments/assets/8ff61856-888b-488e-bd4d-f1ce665d709e" />
+
+
 As u can see, i used only jobs for example similar to real pipeline.
 
 
