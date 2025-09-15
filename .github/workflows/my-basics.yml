@@ -1,6 +1,6 @@
 name: Github-Actions
 env:
-  APPLICATION_NAME: "Example"
+  APPLICATION_NAME: "Examplee"
 
 on:
   push:
